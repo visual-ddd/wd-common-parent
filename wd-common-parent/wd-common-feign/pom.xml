@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>wd-common-parent</artifactId>
+    <groupId>com.wakedata.common</groupId>
+    <version>1.2.3-DDD37</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>wd-common-feign</artifactId>
+
+  <dependencies>
+    <dependency>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <groupId>org.springframework.cloud</groupId>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+    <dependency>
+      <artifactId>feign-okhttp</artifactId>
+      <groupId>io.github.openfeign</groupId>
+    </dependency>
+    <dependency>
+      <groupId>com.wakedata.common</groupId>
+      <artifactId>wd-common-core</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+</project>

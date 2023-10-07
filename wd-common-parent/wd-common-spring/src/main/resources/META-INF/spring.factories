@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wakedata.common.spring.i18n.MessageSourceConfig,\
+  com.wakedata.common.spring.i18n.MessageSourceUtil,\
+  com.wakedata.common.spring.nacos.NacosDiscoveryConfig,\
+  com.wakedata.common.spring.SpringGlobalConfig,\
+  com.wakedata.common.spring.i18n.timezone.TimeZoneDateTimeConfig,\
+  com.wakedata.common.spring.hashids.config.HashidsConfiguration

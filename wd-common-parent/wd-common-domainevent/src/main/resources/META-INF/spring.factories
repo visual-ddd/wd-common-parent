@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wakedata.common.domainevent.core.DomainEventAutoConfiguration\
+  ,com.wakedata.common.domainevent.DomainEventPublisher\
+  ,com.wakedata.common.domainevent.retry.RetryErrorEventAutoConfiguration

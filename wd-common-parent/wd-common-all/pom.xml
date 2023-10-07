@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>com.wakedata.common</groupId>
+		<artifactId>wd-common-parent</artifactId>
+		<version>1.2.3-DDD37</version>
+	</parent>
+
+	<artifactId>wd-common-all</artifactId>
+	<name>${project.artifactId}</name>
+	<description>惟客数据公共模块</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-log</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-mq</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-mybatis</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-redis</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-sms</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-spring</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-storage</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-domainevent</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

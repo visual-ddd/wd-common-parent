@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wakedata.common.mybatis.plus.MybatisPlusExpandConfiguration

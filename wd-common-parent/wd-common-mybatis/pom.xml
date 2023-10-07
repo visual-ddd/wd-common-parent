@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>com.wakedata.common</groupId>
+		<artifactId>wd-common-parent</artifactId>
+		<version>1.2.3-DDD37</version>
+	</parent>
+
+	<artifactId>wd-common-mybatis</artifactId>
+	<name>${project.artifactId}</name>
+	<description>mybatis、mybatisplus增强</description>
+	
+	<properties>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.wakedata.common</groupId>
+			<artifactId>wd-common-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+		</dependency>
+		<!--  引入mybatis-plus-boot-starter3.2.0之后普遍出现了这个异常，Caused by: java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory -->
+		<!--  mybatis-plus 3.2.0以上版本需要用到一个扩展包，但是和springboot整合的starter里面还没有，所以需要单独加上一个扩展包，用同版本的扩展包就行了 -->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-extension</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>com.vaadin.external.google</groupId>
+					<artifactId>android-json</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <packaging>jar</packaging>
+
+  <parent>
+    <groupId>com.wakedata.common</groupId>
+    <artifactId>wd-common-parent</artifactId>
+    <version>1.2.3-DDD37</version>
+  </parent>
+
+  <artifactId>wd-common-chatgpt</artifactId>
+  <name>${project.artifactId}</name>
+  <description>chatgpt相关</description>
+  <properties>
+    <chatgpt.version>1.0.14-beta1</chatgpt.version>
+  </properties>
+  <dependencies>
+
+    <dependency>
+      <groupId>com.wakedata.common</groupId>
+      <artifactId>wd-common-core</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.unfbx</groupId>
+      <artifactId>chatgpt-java</artifactId>
+      <version>${chatgpt.version}</version>
+    </dependency>
+
+    <!-- jsonpath包 -->
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.plexpt</groupId>
+      <artifactId>chatgpt</artifactId>
+      <version>4.0.5</version>
+    </dependency>
+
+  </dependencies>
+
+</project>
