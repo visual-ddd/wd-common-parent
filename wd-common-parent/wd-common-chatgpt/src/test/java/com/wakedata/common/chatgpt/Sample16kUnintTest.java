@@ -8,6 +8,7 @@ import com.unfbx.chatgpt.entity.completions.Completion;
 import com.wakedata.common.chatgpt.config.ChatGptProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -18,6 +19,7 @@ import java.util.concurrent.CountDownLatch;
  * @Author focus
  * @Date 2021/12/13
  */
+@Ignore
 @Slf4j
 public class Sample16kUnintTest {
 

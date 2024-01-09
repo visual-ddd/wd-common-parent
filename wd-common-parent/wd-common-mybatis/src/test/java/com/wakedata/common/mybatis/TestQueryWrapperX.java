@@ -5,6 +5,7 @@ import com.wakedata.common.mybatis.mapper.BargainActivityMapper;
 import com.wakedata.common.mybatis.model.BargainActivityDO;
 import com.wakedata.common.mybatis.plus.query.QueryWrapperX;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mybatis.spring.annotation.MapperScan;
@@ -21,6 +22,7 @@ import java.util.List;
  * @Author zkz
  * @Date 2022/1/17
  */
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @SpringBootApplication

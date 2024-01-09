@@ -23,6 +23,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <spring-boot-maven-plugin.version>3.2.1</spring-boot-maven-plugin.version>
 
         <!--switch 可配置的开关-->
         <!--编译时是否跳过测试,默认跳过-->
@@ -366,12 +368,14 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot-maven-plugin.version}</version>
                 </plugin>
 
                 <!-- 上传源代码到私服 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
                     <configuration>
                         <attach>true</attach>
                     </configuration>

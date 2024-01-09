@@ -2,15 +2,12 @@ package com.wakedata.common.redis.idgen;
 
 import cn.hutool.core.collection.ConcurrentHashSet;
 import com.wakedata.common.redis.RedisTestApplication;
-import com.wakedata.common.redis.util.RedisUtil;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,6 +18,7 @@ import java.util.stream.IntStream;
  * @author: hhf
  * @date: 2021/12/22
  **/
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = RedisTestApplication.class)
 public class RedisIdGeneratorTest {

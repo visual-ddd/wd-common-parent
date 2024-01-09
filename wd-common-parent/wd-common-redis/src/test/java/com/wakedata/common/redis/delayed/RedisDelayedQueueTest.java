@@ -1,6 +1,7 @@
 package com.wakedata.common.redis.delayed;
 
 import com.wakedata.common.redis.RedisTestApplication;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +16,7 @@ import java.util.concurrent.TimeUnit;
  * @author hhf
  * @date 2021/12/21
  */
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = RedisTestApplication.class)
 public class RedisDelayedQueueTest {

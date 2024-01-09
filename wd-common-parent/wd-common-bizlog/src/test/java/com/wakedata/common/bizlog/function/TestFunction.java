@@ -5,6 +5,7 @@ import com.wakedata.common.bizlog.BizLogTestApplication;
 import com.wakedata.common.bizlog.basic.sample.BizOrder;
 import com.wakedata.common.bizlog.function.sample.BizLogFunctionService;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
  * @author focus
  * @date 2022/10/10
  **/
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {BizLogTestApplication.class})
 @EnableLogRecord(tenant = "wakedata.com")

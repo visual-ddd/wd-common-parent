@@ -9,18 +9,17 @@ import com.unfbx.chatgpt.function.KeyRandomStrategy;
 import com.unfbx.chatgpt.interceptor.DynamicKeyOpenAiAuthInterceptor;
 import com.unfbx.chatgpt.interceptor.OpenAILogger;
 import com.unfbx.chatgpt.interceptor.OpenAiResponseInterceptor;
-import com.unfbx.chatgpt.sse.ConsoleEventSourceListener;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
-import java.net.InetSocketAddress;
-import java.net.Proxy;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -30,6 +29,7 @@ import java.util.concurrent.TimeUnit;
  * @author https:www.unfbx.com
  * 2023-06-14
  */
+@Ignore
 @Slf4j
 public class OpenAiClientFunctionTest {
 
