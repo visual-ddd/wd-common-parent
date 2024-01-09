@@ -6,7 +6,7 @@
 
     <groupId>com.wakedata</groupId>
     <artifactId>wd-parent</artifactId>
-    <version>1.1.0-VD001</version>
+    <version>1.1.0-VD002-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>maven 依赖包版本号统一管理</description>
     <inceptionYear>2024</inceptionYear>

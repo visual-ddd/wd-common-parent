@@ -9,12 +9,12 @@
   <parent>
     <groupId>com.wakedata</groupId>
     <artifactId>wd-parent</artifactId>
-    <version>1.1.0-VD001</version>
+    <version>1.1.0-VD002-SNAPSHOT</version>
   </parent>
 
   <groupId>com.wakedata.common</groupId>
   <artifactId>wd-common-parent</artifactId>
-  <version>1.2.3-VD001</version>
+  <version>1.2.3-VD002-SNAPSHOT</version>
 
   <description>this is my common tools</description>
 
