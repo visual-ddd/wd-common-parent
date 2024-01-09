@@ -9,12 +9,12 @@
   <parent>
     <groupId>com.wakedata</groupId>
     <artifactId>wd-parent</artifactId>
-    <version>1.1.0-DDD03</version>
+    <version>1.1.0-VD001</version>
   </parent>
 
   <groupId>com.wakedata.common</groupId>
   <artifactId>wd-common-parent</artifactId>
-  <version>1.2.3-DDD37</version>
+  <version>1.2.3-VD001</version>
 
   <description>this is my common tools</description>
 
@@ -104,5 +104,13 @@
       </plugin>
     </plugins>
   </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>wd-common-parent Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/visual-ddd/wd-common-parent</url>
+        </repository>
+    </distributionManagement>
 
 </project>

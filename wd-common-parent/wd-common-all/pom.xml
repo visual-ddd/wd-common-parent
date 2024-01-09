@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>com.wakedata.common</groupId>
 		<artifactId>wd-common-parent</artifactId>
-		<version>1.2.3-DDD37</version>
+		<version>1.2.3-VD001</version>
 	</parent>
 
 	<artifactId>wd-common-all</artifactId>
@@ -20,11 +20,6 @@
 		<dependency>
 			<groupId>com.wakedata.common</groupId>
 			<artifactId>wd-common-core</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.wakedata.common</groupId>
-			<artifactId>wd-common-log</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
@@ -44,17 +39,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.wakedata.common</groupId>
-			<artifactId>wd-common-sms</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.wakedata.common</groupId>
 			<artifactId>wd-common-spring</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.wakedata.common</groupId>
-			<artifactId>wd-common-storage</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
