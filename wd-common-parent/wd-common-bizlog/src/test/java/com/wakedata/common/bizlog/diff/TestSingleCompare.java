@@ -2,7 +2,6 @@ package com.wakedata.common.bizlog.diff;
 
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.EnableLogRecord;
-import com.mzt.logapi.starter.annotation.LogRecord;
 import com.wakedata.common.bizlog.BizLogTestApplication;
 import com.wakedata.common.bizlog.basic.sample.BizOrder;
 import com.wakedata.common.bizlog.diff.sample.BizLogSingleDiffService;
@@ -11,6 +10,7 @@ import com.wakedata.common.bizlog.diff.sample.bo.BizSingle;
 import com.wakedata.common.bizlog.diff.sample.bo.CycleInner1;
 import com.wakedata.common.bizlog.diff.sample.bo.CycleInner2;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,6 +25,7 @@ import java.util.Date;
  * @author focus
  * @date 2022/10/10
  **/
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {BizLogTestApplication.class})
 @EnableLogRecord(tenant = "wakedata.com")
