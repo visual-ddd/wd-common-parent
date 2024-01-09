@@ -44,10 +44,10 @@ jobs:
 
       - name: Build and deploy wd-parent
         run: |
-          cd wd-parent
+          cd $GITHUB_WORKSPACE/wd-parent
           mvn clean deploy
 
       - name: Build and deploy wd-common-parent
         run: |
-          cd ../wd-common-parent
+          cd $GITHUB_WORKSPACE/wd-common-parent
           mvn clean deploy
