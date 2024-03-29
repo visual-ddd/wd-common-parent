@@ -30,7 +30,7 @@
     <module>wd-common-feign</module>
     <module>wd-common-userinfo</module>
     <module>wd-common-chatgpt</module>
-
+    <module>wd-common-storage</module>
   </modules>
 
   <properties>

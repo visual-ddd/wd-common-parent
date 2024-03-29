@@ -3,12 +3,12 @@ package com.wakedata.common.domainevent.service;
 import com.wakedata.common.core.util.AsyncExecutorUtil;
 import com.wakedata.common.domainevent.filter.DomainEventPublishFilter;
 import com.wakedata.common.domainevent.model.BaseDomainEvent;
-import io.seata.core.context.RootContext;
-import io.seata.core.model.BranchType;
-import io.seata.rm.RMTransactionHookAdapter;
-import io.seata.rm.RMTransactionHookManager;
-import io.seata.tm.api.transaction.TransactionHookAdapter;
-import io.seata.tm.api.transaction.TransactionHookManager;
+//import io.seata.core.context.RootContext;
+//import io.seata.core.model.BranchType;
+//import io.seata.rm.RMTransactionHookAdapter;
+//import io.seata.rm.RMTransactionHookManager;
+//import io.seata.tm.api.transaction.TransactionHookAdapter;
+//import io.seata.tm.api.transaction.TransactionHookManager;
 import org.springframework.transaction.support.TransactionSynchronizationAdapter;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
@@ -57,14 +57,7 @@ public abstract class AbstractDomainEventSupport {
      * @param event 事件体
      */
     public void postAfterCommit(BaseDomainEvent event) {
-        if (RootContext.inGlobalTransaction()) {
-            TransactionHookManager.registerHook(new TransactionHookAdapter() {
-                @Override
-                public void afterCommit() {
-                    postAsync(event);
-                }
-            });
-        } else if (TransactionSynchronizationManager.isActualTransactionActive()) {
+      if (TransactionSynchronizationManager.isActualTransactionActive()) {
             TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
                 @Override
                 public void afterCommit() {
@@ -80,14 +73,7 @@ public abstract class AbstractDomainEventSupport {
      * 在RM二阶段提交后触发
      */
     public void postAfterSeataRMCommit(BaseDomainEvent event) {
-        if (RootContext.inGlobalTransaction()) {
-            RMTransactionHookManager.registerHook(RootContext.getXID(),new RMTransactionHookAdapter() {
-                @Override
-                public void afterBranchCommit (BranchType branchType, String xid, long branchId)  {
-                    postAsync(event);
-                }
-            });
-        }
+
     }
 
 }
