@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.wakedata.common.core.GlobalApplicationContext,\
-com.wakedata.common.core.global.GlobalCommonConfig,\
-com.wakedata.common.core.location.QqMapConfig

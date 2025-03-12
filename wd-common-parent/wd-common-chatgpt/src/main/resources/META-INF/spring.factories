@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.wakedata.common.chatgpt.config.ChatGptConfigtion,com.wakedata.common.azure.openai.config.AzureOpenAiProperties

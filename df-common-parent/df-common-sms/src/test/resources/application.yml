@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+
+sms:
+  send:
+    env: ctyun
+huawei:
+  sms:
+    appUrl: https://smsapi.cn-north-4.myhuaweicloud.com:443
+    appKey: DE5pICkQ9yh84SX07Q3QStOXQ0p3-1
+    appSecret: TQSF7fVVAcbgA7D0etySdbvKsgXX
+
+
+ctyun:
+  sms:
+    access-key-id: 0f11b2ac2c0a496eb3b526cbe3eac874
+    access-key-secret: 01da63c10cc045cc9054d92f9880f5d3
+    sign-name: 天翼云测试
+    template-code: SMS64124870510

@@ -1,5 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.wakedata.common.storage.service.impl.CosFileStorageService,\
-com.wakedata.common.storage.service.impl.ObsFileStorageService,\
-com.wakedata.common.storage.service.impl.OssFileStorageService,\
-com.wakedata.common.storage.service.impl.S3FileStorageService

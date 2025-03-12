@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.df.common.sms.core.tencent.TencentSendSmsAutoConfiguation,\
+  com.df.common.sms.core.aliyun.AliyunSendSmsAutoConfiguation,\
+  com.df.common.sms.core.huawei.HuaweiSendSmsAutoConfiguration,\
+  com.df.common.sms.core.ctyun.CtyunSendSmsAutoConfiguation
